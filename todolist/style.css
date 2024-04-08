@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(170, 94, 22), rgb(172, 144, 8));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    background-image: linear-gradient(to right, rgb(151, 85, 24), rgb(172, 144, 8));
+}
+
+header nav div h1 {
+    font-family: verdana;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    min-width: 380px;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.bg-image div {
+    margin-top: 30px;
+}
+
+.bg-image div input[type="text"]:focus {
+    outline: none;
+}
+.bg-image div:has(.todocheck:checked){
+    background-color: rgb(73, 55, 3);
+    order:1;
+}
+
+.bg-image div input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+}
+
+.bg-image div input[type="text"] {
+    font-size: 20px;
+    color: rgb(197, 169, 169);
+    border: none;
+    background-color: transparent;
+    border-bottom: 4px solid rgb(13, 67, 82);
+    width: 350px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bg-image {
+    margin-top: 10px;
+    width: 40%;
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, rgb(125, 69, 16), rgb(111, 94, 11));
+    box-shadow: 0 4px 8px 0 rgba(11, 94, 166, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
